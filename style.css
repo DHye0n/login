@@ -2,9 +2,13 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url(background.jpg);
-    background-repeat: no-repeat;
+    background: url(background.jpg) no-repeat;
+    background-size: 100%;
+    background-position: relative;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 .box{
     position: absolute;
@@ -18,6 +22,7 @@ body{
     box-shadow: 0 15px 25px rgba(0,0,0,.5);
     border-radius: 10px;
     height: 280px;
+    padding-top: 33px;
 }
 .box h2{
     margin: 0;
@@ -25,6 +30,7 @@ body{
     color: #fff;
     text-align: center;
     cursor: default;
+    font-size: 30px;
 }
 .box .inputBox{
     position: relative;
@@ -57,7 +63,7 @@ body{
     top: -21px;
     left: 0;
     color: #ddb64c;
-    font-size: 12px;
+    font-size: 14px;
 }
 .box input[type="submit"]{
     width: 100%;
@@ -67,10 +73,9 @@ body{
     border: 1px solid #fff;
     color: #fff;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 7px;
     padding-top: 4px;
     padding-bottom: 4px;
     transition: .5s;
     cursor: pointer;
 }
-
